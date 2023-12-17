@@ -22,7 +22,7 @@ function draw() {
     for (let i = 0; i < 50; i++) {
       let x = mouseX + map(noise(count * 0.005, 0.5), 0, 1, -1, 1) * 100;
       let y = mouseY + map(noise(count * 0.005, 2.5), 0, 1, -1, 1) * 100;
-      let a = noise(count * 0.001, 3.5) * TWO_PI * 30;
+      let a = noise(count * 0.001, 3.5) * TWO_PI * 15;
       let s = noise(count * 0.03, 5.5);
 
       let hue = map(noise(count * 0.01, 5.5), 0.33, 0.66, 0, 1);
