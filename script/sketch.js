@@ -24,9 +24,8 @@ function draw() {
       let y = mouseY + map(noise(count * 0.005, 2.5), 0, 1, -1, 1) * 100;
       let a = noise(count * 0.001, 3.5) * TWO_PI * 15;
       let s = noise(count * 0.03, 5.5);
-
       let hue = map(noise(count * 0.01, 5.5), 0.33, 0.66, 0, 1);
-      tint(hue, 0.25, 1, noise(count * 0.01, 7.5) * 0.5);
+      tint(hue, 0.9, 1, noise(count * 0.1, 7.5) * 0.5);
 
       drawBrush(x, y, a, s);
       drawBrush(width - x, y, -a, s);
