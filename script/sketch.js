@@ -13,15 +13,15 @@ function setup() {
   brush.colorMode(HSB, 1.0);
   makeBrush();
   ellipse(0, 0, width, height, 0);
-  noiseDetail(1.1, 0.1);
+  noiseDetail(1, 0.1);
 }
 
 function draw() {
   colorMode(HSB, 1.0);
   if (mouseX != 0 && mouseY != 0 && running) {
     for (let i = 0; i < 55; i++) {
-      let x = mouseX + map(noise(count * 0.003, 2.5), 0, 1, -1, 1) * 100;
-      let y = mouseY + map(noise(count * 0.003, 4.5), 0, 1, -1, 1) * 100;
+      let x = mouseX + map(noise(count * 0.003, 5.5), 0, 1, -1, 1) * 100;
+      let y = mouseY + map(noise(count * 0.003, 0.5), 0, 1, -1, 1) * 100;
       let a = noise(count * 0.001, 3.5) * TWO_PI * 15;
       let s = noise(count * 0.03, 5.5);
       let hue = map(noise(count * 0.01, 5.5), 0.33, 0.66, 0, 1);
@@ -49,7 +49,7 @@ function makeBrush() {
   brush.noFill();
   noiseSeed(random(-100000, 100000));
   for (let i = 0; i < 10; i++) {
-    brush.strokeWeight(random() * 2);
+    brush.strokeWeight(random() * 5);
     brush.stroke(
       random(1.0),
       random(0.5, 1.0),
