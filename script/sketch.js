@@ -1,5 +1,4 @@
 //original by:https://openprocessing.org/sketch/1494739
-//original by:https://openprocessing.org/sketch/704595
 let running = true;
 let brush;
 let count = 0;
