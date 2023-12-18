@@ -10,7 +10,7 @@ function setup() {
   background(0);
 
   brush = createGraphics(width / 50, height);
-  brush.colorMode(HSB, 0.7);
+  brush.colorMode(HSB, 1.0);
   makeBrush();
   ellipse(0, 0, width, height, 0);
   noiseDetail(1, 0);
@@ -19,7 +19,7 @@ function setup() {
 function draw() {
   colorMode(HSB, 1.0);
   if (mouseX != 0 && mouseY != 0 && running) {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 55; i++) {
       let x = mouseX + map(noise(count * 0.005, 0.5), 0, 1, -1, 1) * 100;
       let y = mouseY + map(noise(count * 0.005, 2.5), 0, 1, -1, 1) * 100;
       let a = noise(count * 0.001, 3.5) * TWO_PI * 15;
