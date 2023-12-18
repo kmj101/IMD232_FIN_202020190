@@ -10,7 +10,7 @@ function setup() {
   background(0);
 
   brush = createGraphics(width / 50, height);
-  brush.colorMode(HSB, 0.2);
+  brush.colorMode(HSB, 0.7);
   makeBrush();
   ellipse(0, 0, width, height, 0);
   noiseDetail(1, 0);
