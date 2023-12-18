@@ -18,8 +18,8 @@ function setup() {
   textSize(20);
   // 텍스트의 색을 형광핑크로 변경
   fill('#FF00FF');
-  text('커서를 움직여보세요', width / 2, 30); // 상단으로 옮김
-  text('r = reset, space = 일시정지', width / 2, 70); // 상단으로 옮김
+  text('커서를 움직여보세요', width / 2, 30);
+  text('r = reset, space = 일시정지', width / 2, 70);
 }
 
 function draw() {
