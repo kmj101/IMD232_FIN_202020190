@@ -18,7 +18,7 @@ function setup() {
   textSize(20);
   // 텍스트의 색을 형광핑크로 변경
   fill('#FF00FF');
-  text('커서를 천천히 움직여보세요', width / 2, 30);
+  text('마우스 커서를 천천히 움직여보세요', width / 2, 30);
   text('r = 초기화, space = 일시정지', width / 2, 70);
 }
 
@@ -45,7 +45,7 @@ function keyPressed() {
   if (keyCode === 82) {
     background(0);
     fill('#FF00FF');
-    text('커서를 천천히 움직여보세요', width / 2, 30);
+    text('마우스 커서를 천천히 움직여보세요', width / 2, 30);
     text('r = 초기화, space = 일시정지', width / 2, 70);
   } //'r'eset
   if (keyCode === 32) {
