@@ -16,8 +16,12 @@ function setup() {
 
   textAlign(CENTER, CENTER);
   textSize(20);
+
+  // 텍스트의 색을 형광핑크로 변경
   fill('#FF00FF');
-  text('마우스 커서를 천천히 움직여보세요', width / 2, 30);
+  text('마우스 커서를 천천히 움직여 보세요', width / 2, 30);
+  // 텍스트의 색을 형광 연두색으로 변경
+  fill('#00FF00');
   text('r = 초기화, space = 일시정지', width / 2, 70);
 }
 
@@ -31,7 +35,7 @@ function draw() {
       let s = noise(count * 0.03, 5.5);
       let hue = map(noise(count * 0.01, 5.5), 0.33, 0.66, 0, 1);
       tint(hue, 0.9, 1, noise(count * 0.01, 7.5) * 0.5);
-
+      //Original by lulu(좌표 계산 참고)
       drawBrush(x, y, a, s);
       drawBrush(width - x, y, -a, s);
 
@@ -43,8 +47,9 @@ function draw() {
 function keyPressed() {
   if (keyCode === 82) {
     background(0);
-    fill('#FF00FF');
-    text('마우스 커서를 천천히 움직여보세요', width / 2, 30);
+    fill('#FFFF00');
+    text('마우스 커서를 천천히 움직여 보세요', width / 2, 30);
+    fill('#00FF00');
     text('r = 초기화, space = 일시정지', width / 2, 70);
   } //'r'eset
   if (keyCode === 32) {
