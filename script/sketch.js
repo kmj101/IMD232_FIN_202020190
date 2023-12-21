@@ -1,4 +1,6 @@
-//original by: https://openprocessing.org/sketch/1494739
+//original by: katie (https://openprocessing.org/sketch/1494739)
+//original by: skzzm (https://openprocessing.org/user/105743?view=sketches&o=2)
+//좌표참고
 let running = true;
 let brush;
 let count = 0;
@@ -35,7 +37,7 @@ function draw() {
       let s = noise(count * 0.03, 5.5);
       let hue = map(noise(count * 0.01, 5.5), 0.33, 0.66, 0, 1);
       tint(hue, 0.9, 1, noise(count * 0.01, 7.5) * 0.5);
-      //Original by lulu(좌표 계산 참고)
+      //Original by skizzm(좌표 계산 참고)
       drawBrush(x, y, a, s);
       drawBrush(width - x, y, -a, s);
 
